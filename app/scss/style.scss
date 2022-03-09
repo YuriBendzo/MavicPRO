@@ -47,6 +47,12 @@
         display: flex;
         gap: 20px;
     }
+    &__phone {
+        display: none;
+    }
+    &__btn {
+        display: none;
+    }
 }
 
 .top {
@@ -142,7 +148,7 @@
     border: none;
     background-color: #fff;
     position: absolute;
-    bottom: -45px;
+    bottom: -48px;
     right: 0;
     cursor: pointer;
     z-index: 5;
@@ -295,7 +301,7 @@
     &__box-2::before {
         background-image: url(../images/pointer-2.svg);
         width: 346px;
-        height: 81px;
+        height: 85px;
         right: -285px;
         bottom: 85px;
     }
@@ -327,8 +333,9 @@
 
 .questions {
     &__items {
-        min-width: 757px;
+        max-width: 757px;
         padding-bottom: 15px;
+        padding-left: 50px;
         position: relative;
         &::before {
             content: '';
@@ -336,7 +343,7 @@
             width: 319px;
             height: 125px;
             bottom: 30px;
-            right: -319px;
+            left: 690px;
             background-image: url(../images/questions-bg.png);
             background-repeat: no-repeat;
             background-size: cover;
@@ -344,7 +351,7 @@
     }
     &__item {
         background-color: rgba(0, 0, 0, 0.3);
-        min-width: 690px;
+        max-width: 690px;
     }
     &__item + &__item {
         margin-top: 5px;
@@ -390,6 +397,7 @@
 .contacts {
     &__inner {
         display: flex;
+        padding-left: 50px;
     }
     &__info {
         width: 240px;
